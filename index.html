@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="order-summary">
+		<h2 class="visually-hidden">Order summary</h2>
+		<p class="order-summary__text">
+			<span id="order-name" class="order-summary__text  order-summary__text--bold">
+				Harold Finch
+			</span>
+			your total
+		</p>
+		<p class="order-summary__price">
+			<span id="order-currency">$</span>
+			<span id="order-sum">88</span>
+		</p>
+	</section>
+	<section class="payment-form">
+		<h2 class="visually-hidden">Payment form</h2>
+		<form action="" method="post" class="form">
+			<p class="form__group">
+				<label for="card-number" class="form__label">Credit card number</label>
+				<input type="text" class="form__input-text" id="card-number">
+			</p>
+			<p class="form__group">
+				Expiration date
+				<label for="card-month" class="visually-hidden  form__label">Expiration month</label>
+				<label for="card-year" class="visually-hidden  form__label">Expiration year</label>
+				<div class="form__select-wrapper">
+					<select name="card-month" id="card-month" class="form__select">
+						<option value="jun">June</option>
+						<option value="jul">July</option>
+					</select>
+				</div>
+				<div class="form__select-wrapper">
+					<select name="card-year" id="card-year" class="form__select">
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+					</select>
+				</div>
+			</p>
+			<p class="form__group">
+				<label for="card-cvv" class="form__label">Cvv</label>
+				<input type="text" class="form__input-text" id="card-cvv">
+				3 or 4 digits - <a href="#" class="form__link">view example</a>
+			</p>
+			<p>
+				<button class="form__btn" type="submit">Pay</button>
+			</p>
+		</form>
+		<p class="payment-form__footer">
+			<a href="#">Cancel order</a>
+		</p>
+	</section>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
